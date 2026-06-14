@@ -40,6 +40,36 @@ export const DOMAINS: Domain[] = [
       "Bio-processing: soaking, germination, fermentation",
       "Mineral bioavailability & glycemic index studies",
     ],
+    researchHighlights: [
+      {
+        title: "Nutritional Profiling for Mineral Malnutrition",
+        description:
+          "Micronutrient fingerprinting of Indian heritage rice varieties and fortified product development is being carried out to address iron and zinc deficiencies through enriched pigmented rice formulations.",
+        keyResearchers: ["Prof. N. Srividya"],
+      },
+      {
+        title: "Microbiome Therapeutics for Iron Deficiency Anemia",
+        description:
+          "This study evaluates microbiome-modulating symbiotic formulations to support iron metabolism and adolescent girls’ nutritional status.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Metabolic & Lifestyle Disease Functional Foods",
+        description:
+          "Evidence-based functional food products are developed for obesity and diabetes management using ingredient validation, glycemic response testing and satiety studies.",
+        keyResearchers: ["Prof. N. Srividya", "Dr. A. Sumana", "Dr. Tapasya Anand"],
+      },
+      {
+        title: "Advanced Metabolomics and in silico Antiviral Screening",
+        description:
+          "Metabolomic and computational screening of Indian red rice metabolites identify natural SARS-CoV-2 main protease inhibitors and candidates for antiviral functional foods.",
+        keyResearchers: ["Prof. N. Srividya"],
+      },
+    ],
+    publications: [
+      "Ashrita C. Haldipur & N. Srividya. (2021). A comparative evaluation of in vitro antihyperglycemic potential of Bamboo seed rice and Garudan samba. Journal of Cereal Science.",
+      "Ashrita C. Haldipur & N. Srividya. (2020). In vitro glycemic response of indigenous pigmented rice cultivars. Current Research in Nutrition and Food Science.",
+    ],
     team: [
       { name: "Dr... (Miss) N Srividya", role: "Principal Investigator" },
       { name: "Ms. Ashrita C Haldipur", role: "Doctoral Scholar" },
@@ -72,6 +102,29 @@ export const DOMAINS: Domain[] = [
       "Shelf-stable indigenous dairy products",
       "Lactose-free and protein-fortified formulations",
     ],
+    researchHighlights: [
+      {
+        title: "Therapeutic Foods & Eye Health",
+        description:
+          "Functional products were developed for eye health and menopausal support with high carotenoid, anthocyanin and omega-3 formulations.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Ready-to-Eat Convenience Foods",
+        description:
+          "Novel multigrain tarts and Nutri Fusion crackers are formulated from pulse and grain flours to offer nutrient-dense, shelf-stable snack options.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Plant-Based Milk Alternatives",
+        description:
+          "Research on plant-based milk alternatives focuses on extended shelf life, nutritional completeness and sensory acceptability for dairy-free consumers.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+    ],
+    publications: [
+      "K. Sudha Rani & N. Srividya. (2016). Effect of inulin, fructooligosaccharides and L. acidophilus in formulating a synbiotic yogurt. Asian Journal of Dairy and Food Research.",
+    ],
     team: [
       { name: "Dr. (Mrs.) A Sumana", role: "Faculty Lead" },
       { name: "Ms. Manjula Devi Ghoora", role: "Doctoral Scholar" },
@@ -97,6 +150,29 @@ export const DOMAINS: Domain[] = [
       "Instant mixes from under-utilised fruits",
       "Anti-oxidant rich convenience formulations",
     ],
+    researchHighlights: [
+      {
+        title: "Post-Harvest Management of Organic Produce",
+        description:
+          "Research assesses organic farm inputs on tomato and sweet lime quality, antioxidant levels and shelf stability under Jaivik Krishi methods.",
+        keyResearchers: ["Dr. M. Srijaya"],
+      },
+      {
+        title: "Bio-Based Edible Coatings",
+        description:
+          "Aloe gel and chitosan based edible antimicrobial coatings are studied for extending shelf life of papaya, figs and fresh-cut vegetables.",
+        keyResearchers: ["Prof. N. Srividya"],
+      },
+      {
+        title: "Waste Valorisation of Fruit and Vegetable Byproducts",
+        description:
+          "Fruit and vegetable processing byproducts are converted into jellies, yogurt, crackers and biodegradable packaging materials.",
+        keyResearchers: ["Dr. A. Padmaja"],
+      },
+    ],
+    publications: [
+      "N. Saiharini & A. Padmaja. (2022). Studies on nutrient and phytochemical composition and assessment of in vitro antioxidant properties of watermelon fruit by-products. Annals of Phytomedicine.",
+    ],
     team: [
       { name: "Dr. (Mrs.) Ambati Padmaja", role: "Faculty Lead" },
       { name: "Ms. Shrijana Rasaily", role: "Doctoral Scholar" },
@@ -121,6 +197,29 @@ export const DOMAINS: Domain[] = [
       "Sensory & consumer acceptance testing",
       "Scale-up from kitchen to pilot plant",
       "Cost engineering and IP support",
+    ],
+    researchHighlights: [
+      {
+        title: "Therapeutic Product Formulation",
+        description:
+          "Gluten-free millet snack bars, cookies and muesli are developed for celiac-friendly diets with convenient nutritional support.",
+        keyResearchers: ["Dr. M. Meera"],
+      },
+      {
+        title: "Athlete & Wellness Convenience Foods",
+        description:
+          "New products such as Shewins and frozen plant-based treats are formulated to improve strength, immunity, recovery and sensory appeal.",
+        keyResearchers: ["Dr. Tapasya Anand", "Dr. M. Srijaya"],
+      },
+      {
+        title: "Eye & Women’s Health Functional Foods",
+        description:
+          "Foods rich in lutein, zeaxanthin, anthocyanins and omega-3s are created for visual health and menopausal wellbeing.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+    ],
+    publications: [
+      "N/A",
     ],
     team: [
       { name: "Prof... (Mrs.) B Andallu", role: "Phytochemical Specialist" },
