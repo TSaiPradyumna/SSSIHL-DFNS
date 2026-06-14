@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ResearchRouteImport } from './routes/research'
+import { Route as PublicationsRouteImport } from './routes/publications'
 import { Route as FacultyRouteImport } from './routes/faculty'
 import { Route as DomainsRouteImport } from './routes/domains'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -21,6 +22,11 @@ import { Route as DomainsSlugRouteImport } from './routes/domains.$slug'
 const ResearchRoute = ResearchRouteImport.update({
   id: '/research',
   path: '/research',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PublicationsRoute = PublicationsRouteImport.update({
+  id: '/publications',
+  path: '/publications',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FacultyRoute = FacultyRouteImport.update({
@@ -65,6 +71,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/domains': typeof DomainsRouteWithChildren
   '/faculty': typeof FacultyRoute
+  '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
   '/domains/$slug': typeof DomainsSlugRoute
   '/domains/': typeof DomainsIndexRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/faculty': typeof FacultyRoute
+  '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
   '/domains/$slug': typeof DomainsSlugRoute
   '/domains': typeof DomainsIndexRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/domains': typeof DomainsRouteWithChildren
   '/faculty': typeof FacultyRoute
+  '/publications': typeof PublicationsRoute
   '/research': typeof ResearchRoute
   '/domains/$slug': typeof DomainsSlugRoute
   '/domains/': typeof DomainsIndexRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/domains'
     | '/faculty'
+    | '/publications'
     | '/research'
     | '/domains/$slug'
     | '/domains/'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/faculty'
+    | '/publications'
     | '/research'
     | '/domains/$slug'
     | '/domains'
@@ -116,6 +127,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/domains'
     | '/faculty'
+    | '/publications'
     | '/research'
     | '/domains/$slug'
     | '/domains/'
@@ -127,6 +139,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DomainsRoute: typeof DomainsRouteWithChildren
   FacultyRoute: typeof FacultyRoute
+  PublicationsRoute: typeof PublicationsRoute
   ResearchRoute: typeof ResearchRoute
 }
 
@@ -137,6 +150,13 @@ declare module '@tanstack/react-router' {
       path: '/research'
       fullPath: '/research'
       preLoaderRoute: typeof ResearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/publications': {
+      id: '/publications'
+      path: '/publications'
+      fullPath: '/publications'
+      preLoaderRoute: typeof PublicationsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/faculty': {
@@ -210,6 +230,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DomainsRoute: DomainsRouteWithChildren,
   FacultyRoute: FacultyRoute,
+  PublicationsRoute: PublicationsRoute,
   ResearchRoute: ResearchRoute,
 }
 export const routeTree = rootRouteImport
