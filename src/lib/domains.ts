@@ -17,6 +17,8 @@ export type Domain = {
   image: string;
   overview: string;
   focus: string[];
+  researchHighlights?: { title: string; description: string; keyResearchers: string[] }[];
+  publications?: string[];
   team: { name: string; role: string }[];
   projects: { title: string; detail: string }[];
 };
