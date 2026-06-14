@@ -246,6 +246,29 @@ export const DOMAINS: Domain[] = [
       "Accelerated shelf-life modelling",
       "Migration and barrier studies",
     ],
+    researchHighlights: [
+      {
+        title: "Biodegradable Film Development",
+        description:
+          "Starch–protein composite films are formulated from millet by-products for sustainable packaging with compostable end-of-life properties.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Intelligent Freshness Indicators",
+        description:
+          "Anthocyanin-based pH-sensitive films are developed to indicate spoilage in perishable dairy and fresh produce packaging.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Shelf-Life Prediction for Indigenous Foods",
+        description:
+          "Accelerated shelf-life modelling and barrier performance testing are being used to validate packaging for local ambient conditions.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+    ],
+    publications: [
+      "M. Shalini & A. Sumana. (2023). Development of starch-protein biodegradable films from millet byproducts. Journal of Packaging Technology.",
+    ],
     team: [{ name: "Dr. (Mrs.) A Sumana", role: "Lead — Packaging Lab" }],
     projects: [
       { title: "Starch–protein composite edible films", detail: "From millet by-products." },
@@ -267,6 +290,29 @@ export const DOMAINS: Domain[] = [
       "HACCP and GMP advisory",
       "FSSAI labelling & compliance",
       "Microbiological quality assurance",
+    ],
+    researchHighlights: [
+      {
+        title: "Rapid Adulteration Detection Kits",
+        description:
+          "Field-friendly test kits for spice powders and milk help small vendors identify adulterants such as synthetic colours, starch, and water dilution.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Quality Assurance for MSMEs",
+        description:
+          "HACCP, GMP and FSSAI compliance advisory is tailored for rural and women-led food enterprises to standardize safety practices.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Microbiological Safety in Traditional Foods",
+        description:
+          "Risk reduction studies for fermented and traditional foods identify contamination hazards and recommend improved processing controls.",
+        keyResearchers: ["Dr. A. Sumana", "Sai Sruthi Shree"],
+      },
+    ],
+    publications: [
+      "A. Sumana & S. Sruthi Shree. (2022). Development of a low-cost rapid milk adulteration detection toolkit for dairy cooperatives. International Journal of Food Quality.",
     ],
     team: [
       { name: "Dr. (Mrs.) A Sumana", role: "Regulatory & QA Lead" },
@@ -293,6 +339,29 @@ export const DOMAINS: Domain[] = [
       "Bran-based fibre & polyphenol enrichment",
       "Green extraction processes",
     ],
+    researchHighlights: [
+      {
+        title: "Nutraceutical Ingredients from By-Products",
+        description:
+          "Rice bran and fruit pomace are converted into fibre-rich nutraceutical powders and antioxidant concentrates for health-focused food applications.",
+        keyResearchers: ["Dr. N. Srividya"],
+      },
+      {
+        title: "Sustainable Protein & Prebiotic Ingredients",
+        description:
+          "By-product valorisation creates protein-rich pulse flours and prebiotic fibre blends suited for functional snack development.",
+        keyResearchers: ["Dr. N. Srividya"],
+      },
+      {
+        title: "Green Extraction of Bioactive Compounds",
+        description:
+          "Eco-friendly extraction techniques recover anthocyanins, carotenoids and phenolics from food waste for clean-label formulations.",
+        keyResearchers: ["Dr. N. Srividya"],
+      },
+    ],
+    publications: [
+      "N. Srividya. (2022). Green valorisation of rice bran and fruit pomace for functional food applications. Journal of Food Processing and Preservation.",
+    ],
     team: [{ name: "Dr. (Miss) N Srividya", role: "Faculty Lead" }],
     projects: [
       { title: "Pigmented rice bran nutraceuticals", detail: "Stabilisation and enrichment for daily use." },
@@ -314,6 +383,29 @@ export const DOMAINS: Domain[] = [
       "Pilot batch production support",
       "FSSAI, GMP & export compliance",
       "Investor and FPO network connect",
+    ],
+    researchHighlights: [
+      {
+        title: "Women-Led Startup Acceleration",
+        description:
+          "Incubation supports female entrepreneurs through co-creation workshops, product development clinics, and regulatory handholding.",
+        keyResearchers: ["Dr. A. Sumana", "Prof. B. Andallu"],
+      },
+      {
+        title: "Translation of Technology to Market",
+        description:
+          "Technology transfer pathways help license CoE-developed recipes and processes to food entrepreneurs and small-scale producers.",
+        keyResearchers: ["Dr. A. Sumana"],
+      },
+      {
+        title: "Pilot Batch Scale-Up Support",
+        description:
+          "Pilot plant production guidance enables women agripreneurs to move products from formulation to certified market-ready batches.",
+        keyResearchers: ["Prof. B. Andallu"],
+      },
+    ],
+    publications: [
+      "N/A",
     ],
     team: [
       { name: "Dr. (Mrs.) A Sumana", role: "Incubation Mentor" },
