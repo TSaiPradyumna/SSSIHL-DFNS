@@ -49,7 +49,7 @@ function PublicationsPage() {
       </section>
 
       <section className="container-page pb-16">
-        <div className="rounded-[32px] bg-card ring-1 ring-plum/10 overflow-hidden">
+        <div className="rounded-4xl bg-card ring-1 ring-plum/10 overflow-hidden">
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-0 text-center bg-plum text-cream text-xs uppercase tracking-[0.22em] font-bold py-4 px-6">
             <div>Year</div>
             <div>UGC papers</div>
@@ -96,13 +96,13 @@ function PublicationsPage() {
               </div>
               <div className="grid gap-6">
                 {publicationsByYear[year].map((pub) => (
-                  <article key={pub.id} className="rounded-[32px] bg-card ring-1 ring-plum/10 p-8 hover:shadow-xl transition-all">
+                  <article key={pub.id} className="rounded-4xl bg-card ring-1 ring-plum/10 p-8 hover:shadow-xl transition-all">
                     <div className="flex flex-col lg:flex-row lg:justify-between gap-4 mb-4">
                       <div>
                         <div className="text-xs uppercase tracking-[0.18em] text-pomegranate font-bold mb-2">{pub.type}</div>
                         <h4 className="font-display text-2xl leading-tight">{pub.title}</h4>
                       </div>
-                      <div className="text-sm text-plum-deep/80 min-w-[220px]">
+                      <div className="text-sm text-plum-deep/80 min-w-55">
                         <div className="font-semibold">{pub.authors}</div>
                         <div className="mt-2">{pub.outlet}</div>
                         {pub.issn ? <div className="mt-1 text-xs text-plum-deep/60">ISSN: {pub.issn}</div> : null}
@@ -110,7 +110,7 @@ function PublicationsPage() {
                     </div>
                     <div className="grid gap-3 text-sm text-plum-deep/75">
                       {pub.link ? (
-                        <a href={pub.link} target="_blank" rel="noreferrer noopener" className="text-pomegranate underline break-words">
+                        <a href={pub.link} target="_blank" rel="noreferrer noopener" className="text-pomegranate underline wrap-break-word">
                           Open publication link
                         </a>
                       ) : null}
@@ -126,7 +126,7 @@ function PublicationsPage() {
       </section>
 
       <section className="container-page pb-24">
-        <div className="rounded-[32px] bg-plum-deep text-cream p-12 lg:p-16">
+        <div className="rounded-4xl bg-plum-deep text-cream p-12 lg:p-16">
           <h2 className="font-display text-4xl mb-4">All DFNS publications are now structured and linked on the website.</h2>
           <p className="text-cream/80 leading-relaxed text-lg">
             This page includes the complete 2015–present publication record, including journal papers, book chapters, books and conference proceedings with direct links where available.
