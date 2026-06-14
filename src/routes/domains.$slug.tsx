@@ -98,6 +98,28 @@ function DomainDetail() {
         </div>
       </section>
 
+      {/* RESEARCH HIGHLIGHTS */}
+      {d.researchHighlights?.length ? (
+        <section className="container-page py-20">
+          <div className="mb-12">
+            <div className="text-[10px] uppercase tracking-[0.25em] text-pomegranate font-bold mb-4">Research Highlights</div>
+            <h2 className="font-display text-3xl lg:text-4xl leading-tight">Evidence-driven research themes.</h2>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-5">
+            {d.researchHighlights.map((item) => (
+              <div key={item.title} className="p-7 rounded-3xl bg-card ring-1 ring-plum/10 hover:ring-saffron transition-all">
+                <h3 className="font-display text-xl mb-3 leading-tight">{item.title}</h3>
+                <p className="text-plum-deep/75 leading-relaxed mb-4">{item.description}</p>
+                <div className="text-sm uppercase tracking-[0.18em] text-plum-deep/60">Lead investigators</div>
+                <div className="mt-2 text-sm text-plum-deep">
+                  {item.keyResearchers.join(" • ")}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       {/* TEAM */}
       <section className="bg-sage-soft py-20">
         <div className="container-page">
